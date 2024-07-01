@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body{
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffff;
+    width: 100%;
+}
+
+.nav-links{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-links a{
+    color: #000000;
+    text-decoration: none;
+    margin-right: 20px;
+}
+a:hover{
+    color: rgb(232, 56, 56);
+    transition: all 0.2s;
+}
+
+
+.logo{
+    font-size: 40px;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 25px;
+}
+
+.container{
+    padding-top: 70px;
+    background-color: #000000;
+    color: #fff;
+    padding: 1em;
+    height: 520px;
+}
+
+.text-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+
+button{
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 12px; 
+    margin-top: 25px;
+    letter-spacing: 0.2em;
+}
+
+button:hover{
+    background-color: rgb(232, 56, 56);
+    color: #000000;
+    border: none;
+    transition: 0.5s ease-in-out;
+    font-weight: 600;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    padding: 5%
+}
+
+.grid{
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    color: rgb(232, 56, 56);
+    font-size: 30px;
+    margin-left: 15px;
+    top: 0;
+}
+
+h4{
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+h4:hover{
+    color: rgb(232, 56, 56);
+}
+
+.description p{
+    font-size: 12px;
+    margin-left: 15px;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+h5:hover{
+    color: rgb(197, 131, 7);
+}
+
+.cross-icon{
+    display: none;
+    color: #fff;
+}
+
+.hamburger{
+    display: none;
+    font-size: 20px;
+}
+
+.none1{
+    display: none;
+}
+
+@media screen and (max-width: 320px){
+    .links{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+        color: #000000;
+        margin-left: 176px;
+    }
+
+    .none1{
+        display: block;
+        width: 100%;
+    }
+
+    .none{
+        display: none;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-button{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        left: 0;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 11px;
+    }
+
+    body{
+        margin-right: 20px;
+    }
+
+    .text{
+        font-size: 20px;
+        margin-right: 60px;
+    }
+}
